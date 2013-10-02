@@ -70,3 +70,7 @@
 > (digits-sum 123456789)
 45
 ```
+
+##Препоръчани материали##
+
+[Погледнете домашното на първа група, за някой много добри материали за гледене и четене.](https://github.com/IvanIvanov/fp2013/blob/master/lab1/homework1/homework1.md#%D0%9F%D1%80%D0%B5%D0%BF%D0%BE%D1%80%D1%8A%D1%87%D0%B0%D0%BD%D0%B8-%D0%BC%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%B0%D0%BB%D0%B8)
