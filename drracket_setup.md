@@ -1,6 +1,3 @@
-Въведение
-=========
-
 По време на упражненията на курса по Функционално програмиране ще използваме езика за програмиране [Racket](http://racket-lang.org/) и по-точно [неговата имплементация на R5RS стандарта на езика Scheme](http://docs.racket-lang.org/r5rs/). Накратко: ще пишем на [Scheme](https://en.wikipedia.org/wiki/Scheme_(programming_language\)).
 
 Какво е DrRacket?
@@ -32,5 +29,5 @@
 Помощни видеа
 -------------
 
-* [Въведение в DrRacket под Unix/OS X](http://www.youtube.com/watch?v=6wABnrIFZmQ)
+* [Въведение в DrRacket под OS X](http://www.youtube.com/watch?v=6wABnrIFZmQ) - Върши работа и за други Unix базирани ОС.
 * [Инсталация и въведение в DrRacket под Windows](http://www.youtube.com/watch?v=UOqcLGGKVr8)
