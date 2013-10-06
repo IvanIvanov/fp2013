@@ -60,7 +60,7 @@
 **Сигнатура:**
 
 ```scheme
-(define (mis? x y)
+(define (mis? n)
   ...)
 ```
 
