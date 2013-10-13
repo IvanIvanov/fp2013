@@ -1,8 +1,14 @@
 # Първо домашно
 
-Моля, запознайте се с инструкциите за [домашните](https://github.com/IvanIvanov/fp2013/tree/master/lab4#%D0%94%D0%BE%D0%BC%D0%B0%D1%88%D0%BD%D0%B8).
+[Инструкции за домашните](https://github.com/IvanIvanov/fp2013/tree/master/lab4#%D0%94%D0%BE%D0%BC%D0%B0%D1%88%D0%BD%D0%B8).
 
-[Как се пускат тестовете?](https://github.com/IvanIvanov/fp2013/tree/master/lab4/testing-tool#%D0%9A%D0%B0%D0%BA-%D1%81%D0%B5-%D0%BF%D1%83%D1%81%D0%BA%D0%B0%D1%82-%D1%82%D0%B5%D1%81%D1%82%D0%BE%D0%B2%D0%B5%D1%82%D0%B5)
+[Инструкции за тестовете](https://github.com/IvanIvanov/fp2013/tree/master/lab4/testing-tool#%D0%9A%D0%B0%D0%BA-%D1%81%D0%B5-%D0%BF%D1%83%D1%81%D0%BA%D0%B0%D1%82-%D1%82%D0%B5%D1%81%D1%82%D0%BE%D0%B2%D0%B5%D1%82%D0%B5).
+
+Ако имате затруднения или въпроси, пишете смело (:
+
+## Краен срок за предаване
+
+20.10.2013г. включително.
 
 ## Задача 1
 
