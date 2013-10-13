@@ -1,5 +1,5 @@
 (load "cassie.scm")
-(load "")
+(load "solution.scm")
 
 (define-test balanced?-test
   (assert (balanced? 0)       #t)
