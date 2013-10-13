@@ -35,7 +35,7 @@ homework4_Kurt_Cobain_1967.scm
 
 ### Предаване
 
-Решенията на задачите се предават по e-mail на адрес `hr.vladev@gmail.com`
+Решенията на задачите се предават по e-mail на адрес `hr.vladev+fp2013@gmail.com`
 по следния начин:
 
 1. Посочвате адекватен Subject.
