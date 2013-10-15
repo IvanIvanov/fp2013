@@ -1,3 +1,4 @@
+; (glue-ints 1 2) -> 12
 (define (glue-ints a b)
   (+ (* a 10) b))
 

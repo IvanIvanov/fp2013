@@ -5,7 +5,7 @@
   (define (is-prime-iter? n i)
     (cond
       ( (= n 1) #f )
-      ( (= i n)  #t )
+      ( (= i n)  #t ) ; ако искаме повече скорост, може да смятаме до i * i <= n като условие за край
       ( (is-devisible? n i) #f)
       ( else (is-prime-iter? n (+ i 1)) )))
   (is-prime-iter? n 2))
