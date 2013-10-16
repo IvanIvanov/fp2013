@@ -13,14 +13,14 @@
   (assert (balanced? 1238033) #t))
 
 (define-test even-fibonacci-sum-test
-  (assert (even-fibonacci-sum 0)  0)
-  (assert (even-fibonacci-sum 1)  0)
-  (assert (even-fibonacci-sum 2)  0)
-  (assert (even-fibonacci-sum 3)  0)
-  (assert (even-fibonacci-sum 4)  2)
-  (assert (even-fibonacci-sum 10) 44)
-  (assert (even-fibonacci-sum 42) 82790070)
-  (assert (even-fibonacci-sum 42) 286573922006908542050))
+  (assert (even-fibonacci-sum 0)   0)
+  (assert (even-fibonacci-sum 1)   0)
+  (assert (even-fibonacci-sum 2)   0)
+  (assert (even-fibonacci-sum 3)   0)
+  (assert (even-fibonacci-sum 4)   2)
+  (assert (even-fibonacci-sum 10)  44)
+  (assert (even-fibonacci-sum 42)  82790070)
+  (assert (even-fibonacci-sum 100) 286573922006908542050))
 
 (define-test sum-of-prime-divisors-test
   (assert (sum-of-prime-divisors 4)  2)
