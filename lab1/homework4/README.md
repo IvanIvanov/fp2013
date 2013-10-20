@@ -54,6 +54,8 @@
 (accumulate * 1 '(1 2 3 4 5 6 7 8 9 10)) -> 3628800
 (accumulate * 1 '()) -> 1
 (accumulate + 0 '()) -> 0
+(accumulate * 1 '(7)) -> 7
+(accumulate + 0 '(7)) -> 7
 ```
 
 ##Препоръчани материали:##

@@ -67,3 +67,9 @@
 ;;; Test4
 (framework-check 0 (accumulate + 0 '()))
 
+;;; Test5
+(framework-check 7 (accumulate * 1 '(7)))
+
+;;; Test6
+(framework-check 7 (accumulate + 0 '(7)))
+
