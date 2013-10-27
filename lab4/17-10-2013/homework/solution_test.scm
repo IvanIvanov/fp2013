@@ -11,8 +11,10 @@
 
 (define-test divisor-count-test
   (assert (divisor-count 10 1 10) 4)
-  (assert (divisor-count 4 1 10)  2)
+  (assert (divisor-count 4 1 10)  3)
   (assert (divisor-count 42 1 10) 5))
 
 (run-tests
-  accumulate-test)
+  accumulate-test
+  filter-and-accumulate-test
+  divisor-count-test)

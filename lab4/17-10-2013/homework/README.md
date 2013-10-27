@@ -83,7 +83,7 @@
 
 ```scheme
 (divisor-count 10 1 10) ;=> 4
-(divisor-count 4 1 10)  ;=> 2
+(divisor-count 4 1 10)  ;=> 3
 (divisor-count 42 1 10) ;=> 5
 ```
 
