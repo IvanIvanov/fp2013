@@ -13,7 +13,3 @@
       (else (nth-compose-iter f (- n 1) (compose f result)))))
   
   (nth-compose-iter f n f))
-
-( (nth-compose double 2) 2) ; 8
-( (nth-compose triple 2) 2) ; 18
-( (nth-compose inc 10) 1) ; 11

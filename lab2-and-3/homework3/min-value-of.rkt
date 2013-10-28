@@ -27,7 +27,3 @@
   ; връщаме ламбда функция като резултат
   (lambda (a b)
     (min-value-in-interval-iter a b a)))
-
-( (min-value-of test-f1) 0 2) ;2
-( (min-value-of test-f2) -5 -1) ;-1
-( (min-value-of test-f3) -100 100) ;-3
