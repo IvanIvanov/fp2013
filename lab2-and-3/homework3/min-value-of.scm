@@ -1,16 +1,3 @@
-; (x-2)^2
-(define (test-f1 x)
-  (expt (- x 2) 2))
-
-; (x^3 - 2) / x
-(define (test-f2 x)
-  (/ (- (expt x 3) 2) x))
-
-; x^2 + 5x - 6
-(define (test-f3 x)
-  (- (+ (expt x 2) (* 5 x)) 6))
-
-
 (define (min-value-of func)
   (define (min-value-in-interval-iter a b result)
 

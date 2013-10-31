@@ -15,7 +15,7 @@
 ;;; To inspect the actual test cases that are run - look at the
 ;;; bottom of the file.
 ;;;
-(load "suffix.rkt")
+(load "occurrences.scm")
 
 
 
@@ -46,16 +46,10 @@
 ;;; Dragons no more!
 ;;; End of the "test framework" code.
 
-(define (range a b)
-  (cond
-    ( (> a b) (list))
-    (else (cons a (range (+ a 1) b)))))
 
 ;;; The test cases follow:
-(framework-check #f (suffix? (list 1 2 3) (list 4 5 6))) ;;; #f
-(framework-check #f (suffix? (list 1 2 3) (list 4 5 6 1 2))) ;;;#f
-(framework-check #t (suffix? (list 1 2 3) (list 4 5 6 1 2 3))) ;;; #t
-(framework-check #t (suffix? (list) (list 4 5 6))) ;;; #t
-(framework-check #t (suffix? (list 6) (list 4 5 6))) ;;; #t
-(framework-check #t (suffix? (range 1 10) (range 1 10))) ;;; #t
-(framework-check #f (suffix? (range 1 10) (range 1 11))) ;;; #f
+(framework-check (list 2 1 0) (occurrences (list 1 2 3) (list 1 2 4 1))) ;;; (2 1 0)
+(framework-check (list 0 0 0) (occurrences (list 2 2 2) (list 0 5 6))) ;;; (0 0 0)
+(framework-check (list 12 12 12) (occurrences (list 2 2 2) (list 2 2 2 2 2 2 2 2 2 2 2 2))) ;;; (12 12 12)
+(framework-check (list) (occurrences (list) (list 2 2 2 2 2 2 2 2 2 2 2 2))) ;;; ()
+(framework-check (list 0 0 0) (occurrences (list 2 3 4) (list))) ;;; (0 0 0)

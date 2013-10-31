@@ -15,7 +15,7 @@
 ;;; To inspect the actual test cases that are run - look at the
 ;;; bottom of the file.
 ;;;
-(load "min-value-of.rkt")
+(load "min-of-lists.scm")
 
 
 
@@ -43,18 +43,11 @@
       (__test-passed)
       (__test-failed)))
 
-(define (framework-check-aprox expected-value return-value)
-  (let ((epsilon 1e-6))
-    (if (< (abs (- expected-value return-value)) epsilon)
-        (__test-passed)
-        (__test-failed))))
-
 ;;; Dragons no more!
 ;;; End of the "test framework" code.
 
 
 ;;; The test cases follow:
-
-(framework-check 2 ( (min-value-of test-f1) 0 2))
-(framework-check -1 ( (min-value-of test-f2) -5 -1))
-(framework-check -3 ( (min-value-of test-f3) -100 100))
+(framework-check (list 1 4 7) (min-of-lists (list (list 1 2 3) (list 4 5 6) (list 7 8 9)))) ;;; (1 4 7)
+(framework-check (list -1 0 -100) (min-of-lists (list (list 1 2 3 -1) (list 4 5 0 6) (list 7 8 -100 9)))) ;;; (-1 0 -100)
+(framework-check (list 1 2 3) (min-of-lists (list (list 1 1 1) (list 2 2 2) (list 3 3 3)))) ;;; (1 2 3)

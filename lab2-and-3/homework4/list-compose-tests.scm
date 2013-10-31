@@ -15,7 +15,7 @@
 ;;; To inspect the actual test cases that are run - look at the
 ;;; bottom of the file.
 ;;;
-(load "list-compose.rkt")
+(load "list-compose.scm")
 
 
 

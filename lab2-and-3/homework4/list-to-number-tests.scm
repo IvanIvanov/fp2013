@@ -15,7 +15,7 @@
 ;;; To inspect the actual test cases that are run - look at the
 ;;; bottom of the file.
 ;;;
-(load "occurrences.rkt")
+(load "list-to-number.scm")
 
 
 
@@ -46,10 +46,11 @@
 ;;; Dragons no more!
 ;;; End of the "test framework" code.
 
+;;; Test cases follows:
 
-;;; The test cases follow:
-(framework-check (list 2 1 0) (occurrences (list 1 2 3) (list 1 2 4 1))) ;;; (2 1 0)
-(framework-check (list 0 0 0) (occurrences (list 2 2 2) (list 0 5 6))) ;;; (0 0 0)
-(framework-check (list 12 12 12) (occurrences (list 2 2 2) (list 2 2 2 2 2 2 2 2 2 2 2 2))) ;;; (12 12 12)
-(framework-check (list) (occurrences (list) (list 2 2 2 2 2 2 2 2 2 2 2 2))) ;;; ()
-(framework-check (list 0 0 0) (occurrences (list 2 3 4) (list))) ;;; (0 0 0)
+(framework-check 123 (list-to-number (list 1 2 3)))
+(framework-check 102030 (list-to-number (list 1 0 2 0 3 0)))
+(framework-check 0 (list-to-number (list 0 0 0 0 0)))
+(framework-check 123 (list-to-number (list 0 0 0 1 2 3)))
+(framework-check 8432 (list-to-number (list 0 8 4 3 2)))
+(framework-check 0 (list-to-number (list)))

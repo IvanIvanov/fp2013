@@ -1,7 +1,3 @@
-(define (double x) (* x 2))
-(define (triple x) (* x 3))
-(define (inc x) (+ x 1))
-
 (define (compose f g)
   (lambda (x) (g (f x))))
 

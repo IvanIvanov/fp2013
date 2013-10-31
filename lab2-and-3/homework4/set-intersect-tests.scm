@@ -15,7 +15,7 @@
 ;;; To inspect the actual test cases that are run - look at the
 ;;; bottom of the file.
 ;;;
-(load "exponential-to-n.rkt")
+(load "set-intersect.scm")
 
 
 
@@ -43,19 +43,14 @@
       (__test-passed)
       (__test-failed)))
 
-(define (framework-check-aprox expected-value return-value)
-  (let ((epsilon 1e-6))
-    (if (< (abs (- expected-value return-value)) epsilon)
-        (__test-passed)
-        (__test-failed))))
-
 ;;; Dragons no more!
 ;;; End of the "test framework" code.
 
+;;; Test cases follows:
 
-;;; The test cases follow:
-; Ако ви го покаже като смесена дроб, натиснете на нея и изберете по какъв начин искате да се визуализира
-(framework-check-aprox 1 (exponential-to-n 0 10))
-(framework-check-aprox 2.7182818284590452353602874 (exponential-to-n 1 200))
-(framework-check-aprox 7.3890560989306502272304274 (exponential-to-n 2 200))
-(framework-check-aprox 22026.4657948067165169579006452 (exponential-to-n 10 1000))
+(framework-check (list 1) (set-intersect (list 1 2 3) (list 4 5 6 1)))
+(framework-check (list 5 6) (set-intersect (list 5 6 7) (list 5 6 8)))
+(framework-check (list) (set-intersect (list 1 2 3) (list 4 5 6)))
+(framework-check (list 2 3 7) (set-intersect (list 1 2 3 3 4 5 1 2 6 7) (list 7 7 7 7 3 3 2 2)))
+(framework-check (list 55 555 5555) (set-intersect (list 1000 12356 999 666 555 3 5555 10 55) (list 5555 555 55)))
+(framework-check (list) (set-intersect (list) (list)))

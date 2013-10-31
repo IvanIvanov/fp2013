@@ -15,7 +15,7 @@
 ;;; To inspect the actual test cases that are run - look at the
 ;;; bottom of the file.
 ;;;
-(load "set-intersect.rkt")
+(load "suffix.scm")
 
 
 
@@ -46,11 +46,16 @@
 ;;; Dragons no more!
 ;;; End of the "test framework" code.
 
-;;; Test cases follows:
+(define (range a b)
+  (cond
+    ( (> a b) (list))
+    (else (cons a (range (+ a 1) b)))))
 
-(framework-check (list 1) (set-intersect (list 1 2 3) (list 4 5 6 1)))
-(framework-check (list 5 6) (set-intersect (list 5 6 7) (list 5 6 8)))
-(framework-check (list) (set-intersect (list 1 2 3) (list 4 5 6)))
-(framework-check (list 2 3 7) (set-intersect (list 1 2 3 3 4 5 1 2 6 7) (list 7 7 7 7 3 3 2 2)))
-(framework-check (list 55 555 5555) (set-intersect (list 1000 12356 999 666 555 3 5555 10 55) (list 5555 555 55)))
-(framework-check (list) (set-intersect (list) (list)))
+;;; The test cases follow:
+(framework-check #f (suffix? (list 1 2 3) (list 4 5 6))) ;;; #f
+(framework-check #f (suffix? (list 1 2 3) (list 4 5 6 1 2))) ;;;#f
+(framework-check #t (suffix? (list 1 2 3) (list 4 5 6 1 2 3))) ;;; #t
+(framework-check #t (suffix? (list) (list 4 5 6))) ;;; #t
+(framework-check #t (suffix? (list 6) (list 4 5 6))) ;;; #t
+(framework-check #t (suffix? (range 1 10) (range 1 10))) ;;; #t
+(framework-check #f (suffix? (range 1 10) (range 1 11))) ;;; #f

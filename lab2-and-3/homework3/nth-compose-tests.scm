@@ -15,7 +15,7 @@
 ;;; To inspect the actual test cases that are run - look at the
 ;;; bottom of the file.
 ;;;
-(load "min-of-lists.rkt")
+(load "nth-compose.scm")
 
 
 
@@ -46,8 +46,14 @@
 ;;; Dragons no more!
 ;;; End of the "test framework" code.
 
+;;; Test cases follows:
 
-;;; The test cases follow:
-(framework-check (list 1 4 7) (min-of-lists (list (list 1 2 3) (list 4 5 6) (list 7 8 9)))) ;;; (1 4 7)
-(framework-check (list -1 0 -100) (min-of-lists (list (list 1 2 3 -1) (list 4 5 0 6) (list 7 8 -100 9)))) ;;; (-1 0 -100)
-(framework-check (list 1 2 3) (min-of-lists (list (list 1 1 1) (list 2 2 2) (list 3 3 3)))) ;;; (1 2 3)
+(define (double x) (* x 2))
+(define (triple x) (* x 3))
+(define (inc x) (+ x 1))
+
+
+(framework-check 8 ( (nth-compose double 2) 2))
+(framework-check 18 ( (nth-compose triple 2) 2))
+(framework-check 11 ( (nth-compose inc 10) 1))
+(framework-check 42 ( (nth-compose (lambda (x) x) 1000) 42))

@@ -15,7 +15,7 @@
 ;;; To inspect the actual test cases that are run - look at the
 ;;; bottom of the file.
 ;;;
-(load "list-to-number.rkt")
+(load "min-value-of.scm")
 
 
 
@@ -43,14 +43,31 @@
       (__test-passed)
       (__test-failed)))
 
+(define (framework-check-aprox expected-value return-value)
+  (let ((epsilon 1e-6))
+    (if (< (abs (- expected-value return-value)) epsilon)
+        (__test-passed)
+        (__test-failed))))
+
 ;;; Dragons no more!
 ;;; End of the "test framework" code.
 
-;;; Test cases follows:
 
-(framework-check 123 (list-to-number (list 1 2 3)))
-(framework-check 102030 (list-to-number (list 1 0 2 0 3 0)))
-(framework-check 0 (list-to-number (list 0 0 0 0 0)))
-(framework-check 123 (list-to-number (list 0 0 0 1 2 3)))
-(framework-check 8432 (list-to-number (list 0 8 4 3 2)))
-(framework-check 0 (list-to-number (list)))
+;;; The test cases follow:
+
+; (x-2)^2
+(define (test-f1 x)
+  (expt (- x 2) 2))
+
+; (x^3 - 2) / x
+(define (test-f2 x)
+  (/ (- (expt x 3) 2) x))
+
+; x^2 + 5x - 6
+(define (test-f3 x)
+  (- (+ (expt x 2) (* 5 x)) 6))
+
+
+(framework-check 2 ( (min-value-of test-f1) 0 2))
+(framework-check -1 ( (min-value-of test-f2) -5 -1))
+(framework-check -3 ( (min-value-of test-f3) -100 100))
