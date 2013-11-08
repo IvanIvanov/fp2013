@@ -9,17 +9,18 @@
 
 ### Имплементация
 ```scheme
-(define (reduce l oper start_value)
+(define (reduce oper start_value l)
     (cond
         ((null? l) start_value)
-        (else (reduce (cdr l) oper (oper (car l) start_value)))))
+        (else (reduce oper (oper (car l) start_value) (cdr l)))))
 ```
 
 ### Примерно използване
 ```scheme
-    (reduce (list 1 2 3) + 0) ;;; ще сумира числата в списъка
-    (reduce (list #t #f #t) (lambda (x y) (or x y)) #f) ;;; ще ни върне #t ако има поне една истина в списъка
+    (reduce + 0 (list 1 2 3)) ;;; ще сумира числата в списъка
+    (reduce (lambda (x y) (or x y)) #f (list #t #f #t)) ;;; ще ни върне #t ако има поне една истина в списъка
 ```
+
 ## map
 
 ```map``` е функция, която приема списък и едноаргументна функция и ни връща нов списък, където всеки елемент е извикан с дадената функция.
@@ -27,27 +28,32 @@
 
 ### Имплементация с опашкова рекурсия
 ```scheme
-(define (mymap l f)
-  (define (mymap-iter l f result)
+(define (mymap f l)
+  (define (mymap-iter f l result)
     (cond
       ( (null? l) result)
-      (else (mymap-iter (cdr l) f (cons (f (car l)) result)))))
+      (else (mymap-iter f (cdr l) (cons (f (car l)) result)))))
 
-  (reverse (mymap-iter l f '())))
+  (reverse (mymap-iter f l '())))
 ```
 
 ### Имплементация със стандартна рекурсия
 ```scheme
-(define (mymap-rec l f)
+(define (mymap-rec f l)
   (cond
     ((null? l) '())
-    (else (cons (f (car l)) (mymap-rec (cdr l) f)))))
+    (else (cons (f (car l)) (mymap-rec f (cdr l))))))
 ```
 
 ### Примерно използване
 ```scheme
-(mymap (list 1 2 3) (lambda (x) (* x x ))) ;;; (1 4 9)
+(mymap (lambda (x) (* x x )) (list 1 2 3)) ;;; (1 4 9)
 ```
+
+### Вградена функция в Scheme
+
+В Scheme съществува функцията ```map```, която може да използваме наготово.
+Тя приема за първи аргумент функцията, а за втори списъка.
 
 ## filter
 ```filter``` е функция, която приема списък и едноаргументен предикат и връща нов списък, който се състои само от тези елементи, за които предиката връща истина
