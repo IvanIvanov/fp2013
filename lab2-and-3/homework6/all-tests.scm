@@ -82,7 +82,7 @@
 
 
 (framework-check #t 
-  (match-lengths? (list (range 1 9) (range 10 20))
+  (match-lengths? (list (range 1 9) (range 10 19))
                 (list (list 1 2 3) (list 1 2 3 4))))
 
 (announce "lower-than-harmonic")
