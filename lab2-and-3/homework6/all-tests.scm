@@ -54,6 +54,11 @@
 ;;; Dragons no more!
 ;;; End of the "test framework" code.
 
+(define (range a b)
+  (cond
+    ( (> a b) (list))
+    (else (cons a (range (+ a 1) b)))))
+
 (announce "mult-matrices")
 
 (framework-check 
