@@ -46,7 +46,7 @@
 
 ;;; транспониране на матрица
 (define (transpose M)
-    (map (lambda (index) (get-column M index)) (range 1 (length M))))
+    (map (lambda (index) (get-column M index)) (range 1 (length (car M)))))
 
 
 ;;; функция, която събира две матрици с еднакви размери

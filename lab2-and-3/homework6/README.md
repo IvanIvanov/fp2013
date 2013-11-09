@@ -52,7 +52,7 @@
 (match-lengths? (list (list) (list 1 2) (list 3 4 5)) 
                 (list (list) (list 2 3 4) (list 5 6 7))) ;;; #f
 
-(match-lengths? (list (range 1 9) (range 10 20))
+(match-lengths? (list (range 1 9) (range 10 19))
                 (list (list 1 2 3) (list 1 2 3 4))) ;;; #t
 ```
 
