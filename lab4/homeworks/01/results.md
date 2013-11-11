@@ -1,4 +1,6 @@
-# Georgi Georgiev, 80829
+# Results from homework 1
+
+## Georgi Georgiev, 80829
 
 **Test log:**
 
@@ -10,7 +12,7 @@
 
 ```
 
-# Nelly Panayotova, 80837
+## Nelly Panayotova, 80837
 
 **Test log:**
 
@@ -22,7 +24,7 @@
 
 ```
 
-# Sasho Mihailov, 80821
+## Sasho Mihailov, 80821
 
 **Test log:**
 
@@ -34,7 +36,7 @@
 
 ```
 
-# Vladimir Vladimirov, 80847
+## Vladimir Vladimirov, 80847
 
 **Test log:**
 
@@ -76,7 +78,7 @@
 
 ```
 
-# Izabel Gandileva, 80852
+## Izabel Gandileva, 80852
 
 **Test log:**
 
@@ -88,7 +90,7 @@
 
 ```
 
-# Hristo Dimitrov, 80805
+## Hristo Dimitrov, 80805
 
 **Test log:**
 
@@ -100,7 +102,7 @@
 
 ```
 
-# Veselin Genadiev, 80927
+## Veselin Genadiev, 80927
 
 **Test log:**
 
@@ -112,7 +114,7 @@
 
 ```
 
-# Desislava Dimitrova, 80899
+## Desislava Dimitrova, 80899
 
 **Test log:**
 
@@ -124,7 +126,7 @@
 
 ```
 
-# Georgi Purnarov, 80856
+## Georgi Purnarov, 80856
 
 **Test log:**
 
@@ -136,7 +138,7 @@
 
 ```
 
-# Antonio Nikolov, 80867
+## Antonio Nikolov, 80867
 
 **Test log:**
 
@@ -148,7 +150,7 @@
 
 ```
 
-# Bozhidar Mihaylov, 80797
+## Bozhidar Mihaylov, 80797
 
 **Test log:**
 
@@ -160,7 +162,7 @@
 
 ```
 
-# Antoniya Yordanova, 80919
+## Antoniya Yordanova, 80919
 
 **Test log:**
 
@@ -211,7 +213,7 @@ mis?: undefined;
 
 Имаш 7 верни от 22 примера.
 
-# Denis Bialev, 80833
+## Denis Bialev, 80833
 
 **Test log:**
 
@@ -223,7 +225,7 @@ mis?: undefined;
 
 ```
 
-# Liliya Lyubenova, 80861
+## Liliya Lyubenova, 80861
 
 **Test log:**
 

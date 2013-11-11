@@ -1,4 +1,6 @@
-# Hristo Dimitrov, 80805
+# Results from homework 2
+
+## Hristo Dimitrov, 80805
 
 **Test log:**
 
@@ -10,7 +12,7 @@
 
 ```
 
-# Georgi Georgiev, 80829
+## Georgi Georgiev, 80829
 
 **Test log:**
 
@@ -22,7 +24,7 @@
 
 ```
 
-# Antonio Nikolov, 80867
+## Antonio Nikolov, 80867
 
 **Test log:**
 
@@ -34,7 +36,7 @@
 
 ```
 
-# Bozhidar Mihaylov, 80797
+## Bozhidar Mihaylov, 80797
 
 **Test log:**
 
@@ -46,7 +48,7 @@
 
 ```
 
-# Sasho Mihailov, 80821
+## Sasho Mihailov, 80821
 
 **Test log:**
 
@@ -58,7 +60,7 @@
 
 ```
 
-# Denis Bialev, 80833
+## Denis Bialev, 80833
 
 **Test log:**
 
@@ -80,7 +82,7 @@
 
 ```
 
-# Izabel Gandileva, 80852
+## Izabel Gandileva, 80852
 
 **Test log:**
 
@@ -112,7 +114,7 @@
 
 ```
 
-# Liliya Lyubenova, 80861
+## Liliya Lyubenova, 80861
 
 **Test log:**
 
@@ -124,7 +126,7 @@
 
 ```
 
-# Georgi Purnarov, 80856
+## Georgi Purnarov, 80856
 
 **Test log:**
 
@@ -136,7 +138,7 @@
 
 ```
 
-# Veselin Genadiev, 80927
+## Veselin Genadiev, 80927
 
 **Test log:**
 
