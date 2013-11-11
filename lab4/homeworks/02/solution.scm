@@ -5,7 +5,8 @@
   (- n 1))
 
 (define (divisor? k n)
-  (zero? (remainder n k)))
+  (and (not (zero? k))
+       (zero? (remainder n k))))
 
 (define (sum-of-digits n)
   (if (< n 10)
