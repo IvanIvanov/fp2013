@@ -1,0 +1,15 @@
+(define (fizzbuzz n)
+  (cond ((zero? (remainder n 15)) "fizzbuzz")
+        ((zero? (remainder n 3)) "fizz")
+        ((zero? (remainder n 5)) "buzz")
+        (else n)))
+
+(define (contains-digit? n d)
+  (cond ((zero? n) (zero? d))
+        ((= (remainder n 10) d) #t)
+        (else (contains-digit? (quotient n 10) d))))
+
+(define (mis? n)
+  (cond ((zero? n) #t)
+        ((>= (abs (remainder n 10)) (abs (remainder (quotient n 10) 10))) (mis? (quotient n 10)))
+        (else #f)))
