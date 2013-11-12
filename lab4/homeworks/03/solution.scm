@@ -11,7 +11,7 @@
           (else (loop (next current) accumulated)))))
 
 (define (divisor-count n a b)
-  (let ((divisor? (lambda (x) (and (not (zero? x)) (zero? (remainder n x)))))
-        (inc (lambda (x) (+ x 1)))
-        (map-to-one (lambda (x) 1)))
-    (filter-and-accumulate divisor? a b 0 + map-to-one inc)))
+  (let ((divisor-of-n? (lambda (x) (and (not (zero? x)) (zero? (remainder n x)))))
+        (number->1     (lambda (_) 1))
+        (inc           (lambda (x) (+ x 1))))
+    (filter-and-accumulate divisor-of-n? a b 0 + number->1 inc)))
