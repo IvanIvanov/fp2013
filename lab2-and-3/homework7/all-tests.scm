@@ -86,8 +86,8 @@
       )
  ) (queue-make))
 
-(annouce "Testing zip")
+(announce "Testing zip")
 
 (framework-check (list) (zip (list) (list)))
-(framework-check (list (list 1 'a) (list 2 'b)) (zip (list 1 2) (list a b)))
+(framework-check (list (list 1 'a) (list 2 'b)) (zip (list 1 2) (list 'a 'b)))
 (framework-check (list (list 1 10) (list 2 20) (list 3 30)) (zip (list 1 2 3) (list 10 20 30)))
