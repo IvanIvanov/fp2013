@@ -17,7 +17,7 @@
 ;;;
 (load "steam-ironing.scm")
 (load "queue.scm")
-;;; (load "zip.scm")
+(load "zip.scm")
 
 
 
