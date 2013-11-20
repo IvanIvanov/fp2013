@@ -115,4 +115,24 @@
                   ( (= index j) ith-row )
                   (else row)))
          M (range 1 (length M)))
-  ))
+    ))
+
+
+;;; разменя колоните в дадена матрица с индексите i и j
+;;; броим индексите от 1
+
+;;; връща ред с даден index
+(define (get-row M index)
+    (nth M index)) 
+      
+;;; връща колоната с даден index
+(define (get-column M index)
+    (map (lambda (row) (nth row index)) M))
+
+;;; транспониране на матрица
+(define (transpose M)
+    (map (lambda (index) (get-column M index)) (range 1 (length (car M)))))
+
+
+(define (swap-cols M i j)
+  (transpose (swap-rows (transpose M) i j)))
