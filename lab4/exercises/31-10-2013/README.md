@@ -54,7 +54,12 @@
 
 ```scheme
 (define (filter pred l)
-  )
+  (let loop ((sequence l) (filtered '()))
+    (cond ((null? sequence)
+           filtered)
+          ((pred (car sequence))
+           (loop (cdr sequence) (append filtered (list (car sequence)))))
+          (else (loop (cdr sequence) filtered)))))
 ```
 
 ### Пример
@@ -82,7 +87,10 @@
 
 ```scheme
 (define (reduce f init-val l)
-  )
+  (let loop ((sequence l) (reduced init-val))
+    (if (null? sequence)
+        reduced
+        (loop (cdr sequence) (f reduced (car sequence))))))
 ```
 
 ### Пример
