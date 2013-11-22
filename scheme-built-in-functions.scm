@@ -1,4 +1,4 @@
-;;; Cheat sheet of built-in function in Scheme.
+;;; Cheat sheet of built-in functions in Scheme.
 
 ;;; Functions for working with numbers.
 (even? 2) ; #t
