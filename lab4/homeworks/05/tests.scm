@@ -1,4 +1,4 @@
-(load "../../testing-tool/cassie.scm")
+(load "cassie.scm")
 (load "solution.scm")
 
 (define-test replicate-test
