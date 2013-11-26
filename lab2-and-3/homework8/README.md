@@ -77,9 +77,12 @@ sumOfPrimy :: Int -> Int -> Int
 ```
 
 **Примери:**
+
+```haskell
 sumOfPrimy 1 10	-- 30 защото 2 + 3 + 4 + 5 + 7 + 9 = 30
 sumOfPrimy 100 200 -- 3457
 sumOfPrimy 1 42	-- 292
+```
 
 ### Препоръчани материали
 
