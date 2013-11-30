@@ -1,0 +1,15 @@
+(define (unpack L)
+  (if (null? L)
+      '()
+      (append (unpack-element (car L))
+              (unpack (cdr L)))))
+
+(define (unpack-element element)
+  (if (= (cadr element) 0)
+      '()
+      (cons (car element)
+            (unpack-element (list (car element) (- (cadr element) 1))))))
+
+(unpack '((1 2) (5 3) (10 3))) ; (1 1 5 5 5 10 10 10)
+(unpack '((1 2) (5 3) (10 0))) ; (1 1 5 5 5)
+(unpack '((9 1) (0 10))) ; (9 0 0 0 0 0 0 0 0 0 0)
