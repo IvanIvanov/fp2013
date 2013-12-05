@@ -18,7 +18,7 @@ __Примери:__
 ```scheme
 (sum-of-evenly 1 10)    ->  41   (2 + 3 + 5 + 6 + 7 + 8 + 10)
 (sum-of-evenly 100 200) ->  14420
-(sum-of-evenly 1 42)    ->   812
+(sum-of-evenly 1 42)    ->  812
 ```
 
 #### Задача 2
@@ -140,7 +140,7 @@ __Сигнатура:__
 ```
 __Примери:__
 ```scheme
-(both-in (lambda (x) (* x 2)) (lambda (x) (* x 3)) -10 10)         ->  #<procedure:........>
+(both-in (lambda (x) (* x 2)) (lambda (x) (* x 3)) -10 10)        ->  #<procedure:........>
 ( (both-in (lambda (x) (* x 2)) (lambda (x) (* x 3)) -10 10) 1)   ->  #t
 ( (both-in (lambda (x) (* x 2)) (lambda (x) (* x 3)) -10 10) 2)   ->  #t
 ( (both-in (lambda (x) (* x 2)) (lambda (x) (* x 3)) -10 10) 3)   ->  #t
