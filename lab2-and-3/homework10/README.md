@@ -26,7 +26,7 @@ removeAt :: Int -> [a] -> [a]
 removeAt 0 [1,2,3] -- [2,3]
 removeAt 1 [1,2,3] -- [1,3]
 removeAt 3 [5,6,7,9] -- [5,6,7]
-removeAt -1 [1,2,3] -- "Index out of bounds"
+removeAt (-1) [1,2,3] -- "Index out of bounds"
 removeAt 100 [1,2,3] -- "Index out of bounds"
 ```
 
