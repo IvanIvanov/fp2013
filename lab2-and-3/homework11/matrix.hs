@@ -14,4 +14,4 @@
 -- transpose :: [[a]] -> [[a]]
 
 -- Умножаваме две матрици
--- matrixMultiply (Num a) => [[a]] -> [[a]] -> [[a]]
+-- matrixMultiply :: (Num a) => [[a]] -> [[a]] -> [[a]]
