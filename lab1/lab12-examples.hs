@@ -1,4 +1,4 @@
-import Char
+import Data.Char
 
 -- Задача:
 --
@@ -124,7 +124,7 @@ alternatingList items
 -- uncoolWizards [("Foo", 10), ("Bar", 10)] 5 -> ["Bar"]
 
 -- NB - Да се добави в началото на файла с решението!
--- import Char
+-- import Data.Char
 
 type Wizard = (String, Int)
 
