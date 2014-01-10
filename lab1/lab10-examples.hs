@@ -39,7 +39,7 @@ myFoldl f initial (x:xs) = myFoldl f (f initial x) xs
 
 -- Implement a function to find the product of all items in a list using foldl.
 myProduct :: (Num a) => [a] -> a
-myProduct items = foldl (*) 0 items
+myProduct items = foldl (*) 1 items
 
 -- Creating lambda functions - use \ syntax.
 -- Example implementation of the identity function using lambda.
