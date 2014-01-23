@@ -60,6 +60,18 @@ replicate: undefined;
 
 ```
 
+## Georgi Georgiev, 80829
+
+**Test log:**
+
+```
+ Final Results:
+   Assertions: 12
+   Passed: 12
+   Failed: 0
+
+```
+
 ## Sasho Mihailov, 80821
 
 **Test log:**
